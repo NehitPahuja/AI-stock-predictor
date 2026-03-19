@@ -27,7 +27,7 @@ This document provides a comprehensive, step-by-step plan to build **Quantum Led
 
 ## Phase 4: Frontend UI Construction (Quantum Ledger Dashboard)
 *Objective: Set up the dark-mode, tactical frontend layout visible in the reference design.*
-- [ ] **4.1 Layout Skeleton:** Build a responsive base layout featuring a locked left sidebar and a scrollable main content area.
+- [x] **4.1 Layout Skeleton:** Build a responsive base layout featuring a locked left sidebar and a scrollable main content area.
 - [ ] **4.2 Global CSS Architecture:** Define CSS variables for the dark aesthetic, primary colors (energetic greens, reds, electric blues), typography (e.g., modern fonts like Inter), and glassmorphism (translucency, backdrop-filters).
 - [ ] **4.3 Sidebar Navigation:** Implement the left panel navigation menu (Terminal, Predictions, Sentiment, Portfolio, Settings) with active states, the user profile section, and the "Market Status" indicator.
 
