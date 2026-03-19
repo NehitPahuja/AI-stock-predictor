@@ -7,7 +7,7 @@ This document provides a comprehensive, step-by-step plan to build **Quantum Led
 - [x] **1.1 Project Initialization:** Create the project directory structure (`data/`, `models/`, `src/`, `notebooks/`).
 - [x] **1.2 Environment Setup:** Set up a Python virtual environment and `requirements.txt` (installing `yfinance`, `pandas`, `numpy`, `scikit-learn`, `xgboost`, `tensorflow`).
 - [x] **1.3 Data Loader Module:** Implement `src/data_loader.py` to fetch historical stock data (US & Indian stocks) for free using `yfinance`.
-- [ ] **1.4 Data Cleaning utilities:** Write functions to clean data, handle missing values, and perform forward/backward fills.
+- [x] **1.4 Data Cleaning utilities:** Write functions to clean data, handle missing values, and perform forward/backward fills.
 
 ## Phase 2: Feature Engineering & MVP Models
 *Objective: Build the core ML pipeline to process data and generate basic predictions.*
