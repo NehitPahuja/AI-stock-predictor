@@ -1,0 +1,168 @@
+---
+# 🧑‍💻 TECHNICAL DESIGN DOCUMENT
+---
+
+## 🏗️ System Architecture
+
+```
+User Input (Stock Symbol)
+        ↓
+Data Fetch (yfinance API)
+        ↓
+Data Processing Pipeline
+        ↓
+Feature Engineering
+        ↓
+Model Training
+        ↓
+Prediction Engine
+        ↓
+Visualization / UI
+```
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer           | Technology            |
+| --------------- | --------------------- |
+| Language        | Python                |
+| Data Fetching   | yfinance              |
+| Data Processing | pandas, numpy         |
+| ML Models       | scikit-learn, XGBoost |
+| Deep Learning   | TensorFlow            |
+| Visualization   | matplotlib, seaborn   |
+| UI (optional)   | Streamlit             |
+
+---
+
+## 📂 Project Structure
+
+```
+ai-stock-predictor/
+│
+├── data/
+├── models/
+├── notebooks/
+├── src/
+│   ├── data_loader.py
+│   ├── features.py
+│   ├── train.py
+│   ├── predict.py
+│   └── utils.py
+│
+├── app.py  (Streamlit app)
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🔄 Data Flow
+
+### 1. Fetch Data
+
+```python
+data = yf.download("RELIANCE.NS")
+```
+
+---
+
+### 2. Feature Engineering
+
+- Moving averages
+- Lag features
+- Returns
+
+---
+
+### 3. Train Model
+
+```python
+model.fit(X_train, y_train)
+```
+
+---
+
+### 4. Predict
+
+```python
+predictions = model.predict(X_test)
+```
+
+---
+
+## 🧠 Model Design
+
+### Baseline Model
+
+- Linear Regression
+- Input: Closing price
+- Output: Next day price
+
+---
+
+### Advanced Model
+
+- Random Forest / XGBoost
+- Input:
+  - MA10, MA50
+  - Returns
+  - Volume
+
+- Output:
+  - Price or direction (up/down)
+
+---
+
+### LSTM Model (Optional)
+
+- Sequence-based prediction
+- Input: last N days
+- Output: next price
+
+---
+
+## 📊 Evaluation Metrics
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- Direction Accuracy (% up/down correct)
+
+---
+
+## 🧪 Example Workflow
+
+1. User enters: `TCS.NS`
+2. App fetches data
+3. Model trains
+4. Prediction generated
+5. Chart displayed
+
+---
+
+## 🔐 Risks & Limitations
+
+- Market unpredictability
+- Overfitting
+- Data quality issues
+- No guarantee of profit
+
+---
+
+## 🚀 Future Enhancements
+
+- Real-time data streaming
+- News sentiment analysis
+- Portfolio optimization
+- Integration with brokers (like Zerodha API)
+
+---
+
+## ✅ Deployment Options
+
+- Local machine
+- Cloud (free tiers):
+  - Render
+  - Railway
+  - Hugging Face Spaces

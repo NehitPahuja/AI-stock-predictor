@@ -1,0 +1,141 @@
+# 📄 PRODUCT REQUIREMENTS DOCUMENT (PRD)
+
+## 🧾 Product Name
+
+**AI Stock Predictor (Free & Open Source)**
+
+---
+
+## 🎯 Objective
+
+Build a free, Python-based application that uses machine learning to analyze historical stock data and predict short-term price trends.
+
+---
+
+## 👤 Target Users
+
+- Beginner to intermediate developers learning ML
+- Retail traders (non-professional)
+- Students building finance/AI projects
+
+---
+
+## 💡 Problem Statement
+
+Retail users lack free, simple tools to experiment with AI-based stock prediction. Existing platforms are:
+
+- Paid (e.g., Bloomberg Terminal)
+- Too complex (quant platforms)
+- Not customizable
+
+---
+
+## 🧩 Solution
+
+A lightweight Python tool that:
+
+- Fetches stock data (free)
+- Trains ML models
+- Predicts next-day or short-term prices
+- Visualizes results
+
+---
+
+## 🔑 Key Features
+
+### 1. Data Fetching
+
+- Source: Yahoo Finance via `yfinance`
+- Supports:
+  - US stocks (AAPL, TSLA)
+  - Indian stocks (RELIANCE.NS, TCS.NS)
+
+---
+
+### 2. Data Processing
+
+- Cleaning missing values
+- Feature engineering:
+  - Moving averages (MA10, MA50)
+  - Daily returns
+  - Volatility
+
+---
+
+### 3. Prediction Models
+
+**Phase 1 (MVP):**
+
+- Linear Regression
+- Random Forest
+
+**Phase 2:**
+
+- XGBoost
+
+**Phase 3:**
+
+- LSTM (deep learning using TensorFlow)
+
+---
+
+### 4. Visualization
+
+- Price vs Prediction charts
+- Trend indicators
+- Model performance graphs
+
+---
+
+### 5. User Interface (Optional but recommended)
+
+- CLI (MVP)
+- Web app using Streamlit
+
+---
+
+## 📊 Success Metrics
+
+- Model accuracy (RMSE / MAE)
+- User engagement (if deployed)
+- Prediction visualization clarity
+
+---
+
+## ⚠️ Constraints
+
+- Must be **100% free**
+- No paid APIs
+- No real-time trading execution (initially)
+
+---
+
+## 🚫 Non-Goals
+
+- High-frequency trading
+- Guaranteed profit system
+- Financial advice platform
+
+---
+
+## 🛣️ Roadmap
+
+### Phase 1 (MVP)
+
+- Fetch data
+- Train simple model
+- Show predictions
+
+### Phase 2
+
+- Add multiple models
+- Feature engineering
+
+### Phase 3
+
+- LSTM deep learning
+- Web dashboard
+
+### Phase 4
+
+- Paper trading simulation
