@@ -9,12 +9,12 @@ This document provides a comprehensive, step-by-step plan to build **Quantum Led
 - [x] **1.3 Data Loader Module:** Implement `src/data_loader.py` to fetch historical stock data (US & Indian stocks) for free using `yfinance`.
 - [x] **1.4 Data Cleaning utilities:** Write functions to clean data, handle missing values, and perform forward/backward fills.
 
-## Phase 2: Feature Engineering & MVP Models
+## Phase 2: Feature Engineering & MVP Models ✅
 *Objective: Build the core ML pipeline to process data and generate basic predictions.*
-- [ ] **2.1 Feature Engineering (`src/features.py`):** Calculate Moving Averages (MA10, MA50), daily returns, and rolling volatility.
-- [ ] **2.2 Baseline Model (`src/train.py`):** Train a Linear Regression model for next-day price prediction using the closing price.
-- [ ] **2.3 Advanced MVP Model:** Train a Random Forest model incorporating the newly engineered features.
-- [ ] **2.4 Prediction Engine (`src/predict.py`):** Implement the function to orchestrate the pipeline and format outputs (returning predicted values, confidence %, and bullish/bearish conviction) to match the UI requirements.
+- [x] **2.1 Feature Engineering (`src/features.py`):** Calculate Moving Averages (MA10, MA50), daily returns, and rolling volatility.
+- [x] **2.2 Baseline Model (`src/train.py`):** Train a Linear Regression model for next-day price prediction using the closing price.
+- [x] **2.3 Advanced MVP Model:** Train a Random Forest model incorporating the newly engineered features.
+- [x] **2.4 Prediction Engine (`src/predict.py`):** Implement the function to orchestrate the pipeline and format outputs (returning predicted values, confidence %, and bullish/bearish conviction) to match the UI requirements.
 
 ## Phase 3: Advanced ML & API Layer
 *Objective: Implement the complex models defined in the PRD/TECH and expose them via a backend API.*
